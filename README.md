@@ -168,7 +168,7 @@ widget-dashboard/
 
 ## 🚦 Development Time
 
-Estimated completion time: 3-4 hours
+Estimated completion time: 7-8 hours
 
 ## 👨‍💻 Technical Stack
 
