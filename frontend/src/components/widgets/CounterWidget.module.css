@@ -1,0 +1,107 @@
+.counterWidget {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.settingsBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.settingsBtn:hover {
+  opacity: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.display {
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.count {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.controlBtn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #3498db;
+  background: white;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3498db;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.controlBtn:hover {
+  background: #3498db;
+  color: white;
+}
+
+.controlBtn:active {
+  transform: scale(0.95);
+}
+
+.resetBtn {
+  padding: 0 20px;
+  height: 50px;
+  border: 2px solid #95a5a6;
+  background: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7f8c8d;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.resetBtn:hover {
+  background: #95a5a6;
+  color: white;
+}
