@@ -22,7 +22,6 @@ export class AuthService {
       this.storageService.writeUsers(users);
     }
 
-    // Generate a simple token (in real app, use JWT)
     const token = Buffer.from(`${email}:${Date.now()}`).toString('base64');
 
     return {

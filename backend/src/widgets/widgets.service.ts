@@ -10,7 +10,6 @@ export class WidgetsService {
     const allWidgets = this.storageService.readWidgets();
     
     if (!allWidgets[userEmail]) {
-      // Initialize default widgets for new user
       allWidgets[userEmail] = [
         {
           id: `widget-${Date.now()}-1`,
@@ -45,7 +44,6 @@ export class WidgetsService {
   updateWidgets(userEmail: string, updateWidgetsDto: UpdateWidgetsDto) {
     const allWidgets = this.storageService.readWidgets();
     
-    // Validate and sort widgets by position
     const sortedWidgets = updateWidgetsDto.widgets
       .sort((a, b) => a.position - b.position)
       .map((widget, index) => ({
