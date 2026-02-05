@@ -23,6 +23,15 @@ export const DashboardProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     loadWidgets();
   }, []);
 
+  useEffect(() => {
+    if (widgets.length > 0 && !loading) {
+      const timeoutId = setTimeout(() => {
+        saveWidgets();
+      }, 500); 
+      return () => clearTimeout(timeoutId);
+    }
+  }, [widgets, loading]);
+
   const loadWidgets = async () => {
     try {
       setLoading(true);
